@@ -12,3 +12,10 @@ A vanilla HTML, CSS, and JavaScript version of the original developerFolio React
 - HTML5
 - CSS3
 - Vanilla JavaScript
+
+## Advantages of Static Portfolio 
+
+- **Performance**: Faster load times, reduced complexity
+- **Hosting**: Simple deployment, works with static hosts
+- **Maintenance**: No framework dependencies, fewer updates
+- **SEO**: Static HTML fully indexable by search engines
