@@ -1,5 +1,6 @@
 :root {
   --white-bg: #fff;
+  --white: #fff;
   --grey: #868e96;
   --black: #000;
   --meter-bg: #f3efef;
@@ -533,6 +534,157 @@ body {
   -moz-transition: width 0.6s ease-in-out;
   -o-transition: width 0.6s ease-in-out;
   transition: width 0.6s ease-in-out;
+}
+
+.experience-container {
+	display: flex;
+	margin: 2rem auto 0;
+	padding: 20px 10px;
+	width: 90%;
+}
+
+.experience-container > * {
+	flex: 1 1;
+}
+
+.experience-heading {
+	font-size: 56px;
+	font-weight: 400;
+}
+
+.experience-cards-div {
+	grid-gap: 1rem 1rem;
+	display: grid;
+	gap: 1rem 1rem;
+	grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+}
+
+.experience-card {
+  position: relative;
+  background-color: var(--white-bg);
+  box-shadow: 0 10px 30px -15px #0003;
+  border-radius: 10px;
+  border: 1px solid var(--border-grey);
+}
+
+.experience-card:hover {
+  box-shadow: 0 20px 30px -10px #0003;
+}
+
+.experience-card, .experience-card-dark {
+	border: 1px solid var(--border-grey);
+	border-radius: 10px;
+	box-shadow: 0 10px 30px -15px #0003;
+	position: relative;
+}
+
+.experience-banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+  height: 11rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#facebook-banner {
+	background: rgb(20, 124, 244);
+}
+
+#quora-banner {
+  background-color: rgb(164, 36, 12);
+}
+
+#airbnb-banner {
+  background-color: rgb(252, 92, 100);
+}
+
+.experience-blurred_div {
+  position: absolute;
+  background: linear-gradient(#0006,#0003);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  height: 11rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.experience-div-company {
+  position: absolute;
+  background: transparent;
+  height: 9rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience-text-company {
+	color: var(--white);
+	font-size: 25px;
+	font-weight: 700;
+	margin: 0;
+	overflow: hidden;
+	padding: 1.5rem;
+	text-align: center;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.experience-roundedimg {
+	border-radius: 50%;
+	box-shadow: 0 .5rem 1rem #0000004d;
+	height: 8rem;
+	left: 0;
+	margin-left: auto;
+	margin-right: auto;
+	object-fit: cover;
+	position: absolute;
+	right: 0;
+	top: 7rem;
+	width: 8rem;
+}
+
+.experience-text-details {
+	margin-top: 2rem;
+	padding: 1.5rem;
+}
+
+.experience-text-role {
+	color: var(--black);
+	font-size: 25px;
+	font-weight: 700;
+	line-height: normal;
+	margin: 0;
+	padding-top: 1.5rem;
+	text-align: center;
+}
+
+.experience-text-date {
+	color: #000;
+	font-size: 20px;
+	font-weight: 600;
+	margin: 0;
+	padding-top: 1rem;
+	text-align: center;
+}
+
+.experience-text-desc {
+	text-align: center;
 }
 
 @media (min-width: 48em) {
