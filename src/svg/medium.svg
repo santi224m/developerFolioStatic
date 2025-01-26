@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Capa_1"
+   enable-background="new 0 0 512 512"
+   viewBox="0 0 40 40"
+   version="1.1"
+   sodipodi:docname="medium.svg"
+   width="40"
+   height="40"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs49" />
+  <sodipodi:namedview
+     id="namedview47"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="2.0058594"
+     inkscape:cx="253.25803"
+     inkscape:cy="256.49854"
+     inkscape:window-width="2560"
+     inkscape:window-height="1372"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Capa_1" />
+  <g
+     id="g14"
+     transform="scale(0.078125)">
+    <circle
+       cx="256"
+       cy="256"
+       r="256"
+       id="circle2" />
+    <g
+       id="g12">
+      <g
+         fill="#ffffff"
+         id="g10">
+        <path
+           d="m 280.917,256 c 0,61.006 -49.118,110.461 -109.709,110.461 C 110.618,366.461 61.5,317.006 61.5,256 c 0,-61.006 49.118,-110.461 109.709,-110.461 60.59,0 109.708,49.455 109.708,110.461"
+           id="path4" />
+        <path
+           d="m 401.27,256 c 0,57.427 -24.559,103.98 -54.854,103.98 -30.295,0 -54.854,-46.553 -54.854,-103.98 0,-57.427 24.559,-103.98 54.854,-103.98 30.295,0 54.854,46.553 54.854,103.98"
+           id="path6" />
+        <path
+           d="m 450.5,256 c 0,51.452 -8.638,93.162 -19.293,93.162 -10.655,0 -19.292,-41.71 -19.292,-93.162 0,-51.452 8.636,-93.162 19.292,-93.162 10.655,0 19.293,41.71 19.293,93.162"
+           id="path8" />
+      </g>
+    </g>
+  </g>
+  <g
+     id="g16" />
+  <g
+     id="g18" />
+  <g
+     id="g20" />
+  <g
+     id="g22" />
+  <g
+     id="g24" />
+  <g
+     id="g26" />
+  <g
+     id="g28" />
+  <g
+     id="g30" />
+  <g
+     id="g32" />
+  <g
+     id="g34" />
+  <g
+     id="g36" />
+  <g
+     id="g38" />
+  <g
+     id="g40" />
+  <g
+     id="g42" />
+  <g
+     id="g44" />
+</svg>

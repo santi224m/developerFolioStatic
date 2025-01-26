@@ -129,23 +129,24 @@ body {
 }
 
 .slider {
-	background-color: #ccc;
-	cursor: pointer;
-	right: 0;
-	top: 0;
+  background-color: #ccc;
+  cursor: pointer;
+  right: 0;
+  top: 0;
 }
 
-.slider, .slider::before {
-	bottom: 0;
-	left: 0;
-	position: absolute;
-	transition: .4s;
+.slider,
+.slider::before {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  transition: .4s;
 }
 
 .slider.round {
-	align-items: center;
-	border-radius: 34px;
-	display: flex;
+  align-items: center;
+  border-radius: 34px;
+  display: flex;
 }
 
 .slider::before {
@@ -169,10 +170,141 @@ body {
 }
 
 .emoji {
-	align-items: center;
+  align-items: center;
+  display: flex;
+  margin-left: 2px;
+  z-index: 10;
+}
+
+#greeting {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-935174945759289-1;
+}
+
+.greet-main,
+.main {
+  padding: 20px 10px;
+  width: 90%;
+}
+
+.greet-main {
+  margin: 2rem auto 0;
+}
+
+.greeting-main {
+  display: flex;
+}
+
+.greeting-main>* {
+  flex: 1 1;
+  margin-bottom: 30px;
+}
+
+.greeting-text {
+  color: #000 !important;
+  font-size: 70px;
+  line-height: 1.1;
+}
+
+.wave-emoji {
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-name: wave;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-10deg);
+  }
+
+  20% {
+    transform: rotate(12deg);
+  }
+
+  30% {
+    transform: rotate(-10deg);
+  }
+
+  40% {
+    transform: rotate(9deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#wave-emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0px 0.05em 0px 0.1em;
+  vertical-align: -0.1em;
+}
+
+.subTitle {
+  color: var(--grey) !important;
+}
+
+.greeting-text-p {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+#rocket-emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0px 0.05em 0px 0.1em;
+  vertical-align: -0.1em;
+}
+
+.empty-div {
+	margin-bottom: 40px;
+}
+
+.social-media-div {
+	font-size: 2em;
+}
+
+.button-greeting-div {
 	display: flex;
-	margin-left: 2px;
-	z-index: 10;
+	margin-top: 40px;
+}
+
+.main-button {
+	background-color: #55198b;
+	border: 1px solid #55198b;
+	border-radius: 6px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-size: 1rem;
+	font-weight: 700;
+	margin-right: 50px;
+	margin-top: 20px;
+	padding: 13px 22px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out 0s;
+	width: max-content;
+}
+
+.download-link-button {
+	text-decoration: none;
 }
 
 @media (min-width: 48em) {
