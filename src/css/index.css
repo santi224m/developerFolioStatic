@@ -8,6 +8,7 @@
   --border-grey: hsla(0,0%,83%,.397);
   --ligh-dark-text: #586069;
   --repo-stats: #6a737d;
+  --purple: #55198b;
 }
 
 
@@ -291,8 +292,8 @@ body {
 }
 
 .main-button {
-  background-color: #55198b;
-  border: 1px solid #55198b;
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
   border-radius: 6px;
   color: #fff;
   cursor: pointer;
@@ -307,6 +308,13 @@ body {
   text-transform: uppercase;
   transition: all .3s ease-in-out 0s;
   width: max-content;
+}
+
+.main-button:hover {
+  background-color: var(--white-bg);
+  color: var(--purple);
+  transition: all 0.3s ease 0s;
+  transform: translateY(-3px);
 }
 
 .download-link-button {
@@ -705,6 +713,10 @@ body {
 	transition: all .3s ease;
 }
 
+.repo-card-div:hover {
+	box-shadow: 0 20px 30px -10px #0003;
+}
+
 .repo-left-stat span, .repo-name-div {
 	align-items: center;
 	display: flex;
@@ -770,6 +782,16 @@ body {
 	height: 10px;
 	margin-right: .25rem;
 	width: 10px;
+}
+
+.project-button {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.project-button > .main-button {
+	margin-right: 0 !important;
 }
 
 @media (min-width: 48em) {

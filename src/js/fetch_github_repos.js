@@ -61,23 +61,71 @@ const build_project_els = (repo_list) => {
     repo_stats_left.classList.add('repo-left-stat');
     repo_stats_div.appendChild(repo_stats_left);
 
-    const language_span = document.createElement('span');
-    repo_stats_left.appendChild(language_span);
-
-    const language_color_div = document.createElement('div');
-    language_color_div.classList.add('language-color');
-    if (repo_list[i].language == 'JavaScript') {
-      language_color_div.style.backgroundColor = 'rgb(241, 224, 90)';
-    }
-    language_span.appendChild(language_color_div);
-
-    const language_p = document.createElement('p');
     if (repo_list[i].language != null) {
+      const language_span = document.createElement('span');
+      repo_stats_left.appendChild(language_span);
+
+      const language_color_div = document.createElement('div');
+      language_color_div.classList.add('language-color');
+
+      // Set language color
+      switch (repo_list[i].language) {
+        case 'Assembly':
+          language_color_div.style.backgroundColor = '#6E4C13';
+          break;
+        case 'Astro':
+          language_color_div.style.backgroundColor = '#ff5a03';
+          break;
+        case 'C':
+          language_color_div.style.backgroundColor = '#555555';
+          break;
+        case 'C#':
+          language_color_div.style.backgroundColor = '#178600';
+          break;
+        case 'C++':
+          language_color_div.style.backgroundColor = '#f34b7d';
+          break;
+        case 'CSS':
+          language_color_div.style.backgroundColor = '#663399';
+          break;
+        case 'Go':
+          language_color_div.style.backgroundColor = '#00ADD8';
+          break;
+        case 'HTML':
+          language_color_div.style.backgroundColor = '#e34c26';
+          break;
+        case 'Java':
+          language_color_div.style.backgroundColor = '#b07219';
+          break;
+        case 'JavaScript':
+          language_color_div.style.backgroundColor = '#f1e05a';
+          break;
+        case 'Lua':
+          language_color_div.style.backgroundColor = '#000080';
+          break;
+        case 'Ruby':
+          language_color_div.style.backgroundColor = '#701516';
+          break;
+        case 'Rust':
+          language_color_div.style.backgroundColor = '#dea584';
+          break;
+        case 'SCSS':
+          language_color_div.style.backgroundColor = '#c6538c';
+          break;
+        case 'Shell':
+          language_color_div.style.backgroundColor = '#89e051';
+          break;
+        case 'VBA':
+          language_color_div.style.backgroundColor = '#867db1';
+          break;
+      }
+
+      language_span.appendChild(language_color_div);
+
+      const language_p = document.createElement('p');
       language_p.textContent = repo_list[i].language;
-    } else {
-      language_p.textContent = 'Unknown';
+      language_span.appendChild(language_p);
     }
-    language_span.appendChild(language_p);
 
     const forks_span = document.createElement('span');
     repo_stats_left.appendChild(forks_span);
@@ -131,11 +179,15 @@ const build_project_els = (repo_list) => {
     let file_size = repo_list[i].file_size / 1000;
     repo_size.textContent = file_size.toFixed(2) + ' MB';
     repo_right_stat.appendChild(repo_size);
+
+    outer_div.addEventListener('click', () => {
+      window.open(repo_list[i].url, '_blank').focus();
+    })
   }
 }
 
 const get_github_repos = async () => {
-  const repo_url = "https://api.github.com/users/" + GITHUB_USERNAME + "/repos?per_page=8&sort=updated";
+  const repo_url = "https://api.github.com/users/" + GITHUB_USERNAME + "/repos?per_page=10&sort=updated";
   const response = await fetch(repo_url);
   const data = await response.json();
   const repo_list = [];
