@@ -6,6 +6,8 @@
   --meter-bg: #f3efef;
   --meter-primary-bg: #aaa5ff;
   --border-grey: hsla(0,0%,83%,.397);
+  --ligh-dark-text: #586069;
+  --repo-stats: #6a737d;
 }
 
 
@@ -325,12 +327,6 @@ body {
 
 .main {
   margin: 4rem auto 0;
-}
-
-.greet-main,
-.main {
-  padding: 20px 10px;
-  width: 90%;
 }
 
 .skills-main-div {
@@ -685,6 +681,94 @@ body {
 
 .experience-text-desc {
 	text-align: center;
+}
+
+.project-title {
+	font-size: 52px;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.repo-cards-div-main {
+	grid-gap: 1rem 1rem;
+	display: grid;
+	gap: 1rem 1rem;
+	grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+
+.repo-card-div {
+	background-color: var(--white-bg);
+	box-shadow: 0 10px 30px -15px #0003;
+	color: var(--ligh-dark-text);
+	cursor: pointer;
+	padding: 2rem;
+	transition: all .3s ease;
+}
+
+.repo-left-stat span, .repo-name-div {
+	align-items: center;
+	display: flex;
+}
+
+.repo-svg {
+	margin-right: .5rem;
+	min-width: 16px;
+}
+
+#book-svg {
+  height: 20px;
+}
+
+.repo-star-svg {
+	margin-right: .3rem;
+}
+
+.repo-name {
+	color: #24292e;
+	font-size: 25px;
+	font-weight: 700;
+	height: 30px;
+	letter-spacing: -.5px;
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.repo-description {
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	overflow: hidden;
+}
+
+.repo-stats {
+	color: var(--repo-stats);
+	display: flex;
+	font-size: 13px;
+	justify-content: space-between;
+}
+
+.repo-left-stat {
+	display: flex;
+	flex-grow: 1;
+}
+
+.repo-left-stat span {
+	margin-right: .75rem;
+}
+
+.repo-left-stat span, .repo-name-div {
+	align-items: center;
+	display: flex;
+}
+
+.language-color {
+	background-color: blue;
+	border-radius: 100%;
+	height: 10px;
+	margin-right: .25rem;
+	width: 10px;
 }
 
 @media (min-width: 48em) {
