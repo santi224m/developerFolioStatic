@@ -740,6 +740,7 @@ body {
 	-webkit-box-orient: vertical;
 	display: -webkit-box;
 	overflow: hidden;
+  min-height: 46px;
 }
 
 .repo-stats {
