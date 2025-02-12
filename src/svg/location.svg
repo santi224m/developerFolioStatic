@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2499"
+   xml:space="preserve"
+   width="20"
+   height="20"
+   viewBox="0 0 20 20"
+   sodipodi:docname="location.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview13"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.5043945"
+     inkscape:cx="337.67739"
+     inkscape:cy="341.99806"
+     inkscape:window-width="2560"
+     inkscape:window-height="1372"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2499" /><defs
+     id="defs2503"><clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2513"><path
+         d="M 0,512 H 512 V 0 H 0 Z"
+         id="path2511" /></clipPath></defs><g
+     id="g2505"
+     transform="matrix(0.03906259,0,0,-0.03906259,-2.304e-5,20.000047)"><g
+       id="g2507"><g
+         id="g2509"
+         clip-path="url(#clipPath2513)"><g
+           id="g2515"
+           transform="translate(256,15)"><path
+             d="m 0,0 c -60,90 -165,212 -165,317 0,90.981 74.019,165 165,165 90.981,0 165,-74.019 165,-165 C 165,212 60,90 0,0 Z"
+             style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path2517" /></g><g
+           id="g2519"
+           transform="translate(256,257)"><path
+             d="m 0,0 c -41.353,0 -75,33.647 -75,75 0,41.353 33.647,75 75,75 41.353,0 75,-33.647 75,-75 C 75,33.647 41.353,0 0,0 Z"
+             style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+             id="path2521" /></g></g></g></g></svg>
